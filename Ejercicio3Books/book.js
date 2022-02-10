@@ -1,42 +1,50 @@
-class book{
-    constructor(
-  //Defino parametros
+class book {
+constructor (
+    //Defino parametros
 name,
-volumen,
+autor,
+edicion,
 color,
-bolsillos,
-longLeft,
-longRight,
-tapaAbierta)
+prologo,
+paginas,
+tapaEstado,
+
+)
 
 {
-//Defino propiedades
+    //Defino propiedades 
 this.name=name;
-this.volumen=volumen;
-this.coolor=color;
-this.bolsillos=bolsillos;
+this.autor=autor;
+this.edicion=edicion;
+this.color=color;
+this.tapaEstado=tapaEstado;
+this.pag = {
+pro:prologo, 
+volumen:paginas,
+}
 
-this.long={
-right:longRight,
-left:longLeft},
+}
 
-this.tapaAbierta=tapaAbierta;
+//metodos
+tapaAbierta(estado){
+this.tapaEstado=estado;
+}
+
+cantidadPaginas(p,v){
+    this.pag.pro=p;
+    this.pag.volumen=v;
+}
+
+
+
+
+
+
+
+
 
 
 
 }
-//Métodos
-tapaCambio(tapaEstado){
-    this.tapaAbierta=tapaEstado;
-}
-longitudT(left,right){
-    this.long.left=left;
-    this.long.right=right;
-}
-
-
-
-};
-
 export default book;
 
