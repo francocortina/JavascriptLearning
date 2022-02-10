@@ -60,6 +60,30 @@ const creatingbooks4 = new book(
         false
         
         );
+
+        const content=  `
+        
+             <main>
+    <article class="container">
+    <ul class="list-group">
+                <h1>Book</h1>
+            <li class="list-group-item" >${creatingbooks.name}</li>
+            <li class="list-group-item"> ${creatingbooks.autor}</li>
+            <li class="list-group-item"> ${creatingbooks.edicion}</li>
+            <li class="list-group-item"> ${creatingbooks.color}</li>
+            <li class="list-group-item"> ${creatingbooks.pag.pro}</li>
+            <li class="list-group-item"> ${creatingbooks.pag.volumen}</li>
+            <li class="list-group-item"> ${creatingbooks.tapaEstado}</li>
+    </ul>
+
+</article>
+</main>;
+        `
+   
+
+document.body.innerHTML = content;
+
+
 console.log("data objeto mochila1",creatingbooks);
 console.log("data objeto mochila2",creatingbooks2);
 console.log("data objeto mochila3",creatingbooks3);
@@ -79,5 +103,7 @@ console.log("Cantidad de hojas:", creatingbooks.pag.pro);
 
 console.log("Edición:", creatingbooks3.edicion);
 console.log("data objeto mochila",creatingbooks["cantidadPaginas"]);
+
+
 
 
