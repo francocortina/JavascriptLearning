@@ -1,0 +1,4 @@
+
+*{box-sizing: border-box;}
+.container{display: block;margin: 0 auto; text-align: center;background-color:skyblue;}
+.letra{font-size:35px; font-family: sans-serif;}

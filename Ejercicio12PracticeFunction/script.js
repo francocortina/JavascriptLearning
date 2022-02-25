@@ -222,6 +222,36 @@ Total= ${formatter(total)}
   `);
 };
 
+//Este es de repaso pero lo hago passandole los datos  del formatear.
+
+const formatear = (country,currency,value) =>
+{
+let FormatValue=new Intl.NumberFormat(country,{
+  style:"currency",
+  currency:currency,
+}).format(value); ;
+ return FormatValue;
+}
+
+
+const tipCalculadora5 = (country,currency,sum,percentage)=> {
+let tip = sum*(percentage/100);
+let total= sum + tip;
+
+console.log(
+ `Sum before tip=  ${formatear(country,currency,sum)}
+  Tip percentage= ${percentage}
+  Tip= ${formatear(country,currency,tip)}
+  Total=${formatear(country,currency,total)} 
+  
+  `
+
+
+)
+
+
+}
+
 
 
 
